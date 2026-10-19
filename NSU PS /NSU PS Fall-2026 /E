@@ -1,0 +1,58 @@
+#include<stdio.h>
+
+int point_a , point_b;
+int sum_a = 0 , sum_b = 0;
+
+void compare(int a , int b) ;
+
+int main (void)
+{
+    int a[3];
+    int b[3];
+    scanf("%d" , &a[0]);
+    scanf("%d" , &a[1]);
+    scanf("%d" , &a[2]);
+    scanf("%d" , &b[0]);
+    scanf("%d" , &b[1]);
+    scanf("%d" , &b[2]);
+    compare(a[0],b[0]);
+    compare(a[1],b[1]);
+    compare(a[2],b[2]);
+    printf("%d %d " , sum_a ,sum_b);
+
+
+
+
+
+
+
+    return 0;
+}
+//function defination
+void compare(int a , int b )
+{
+    if (a>b)
+    {
+        point_a = 1;
+        point_b = 0;
+        sum_a = sum_a + point_a;
+        sum_b = sum_b + point_b;
+
+
+    }
+    else if (b>a)
+    {
+        point_b = 1;
+        point_a = 0;
+        sum_a = sum_a + point_a;
+        sum_b = sum_b + point_b;
+    }
+    else
+    {
+        point_a = 0;
+        point_b = 0;
+        sum_a = sum_a + point_a;
+        sum_b = sum_b + point_b;
+    }
+
+}
