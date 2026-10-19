@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+
+int main(void)
+{
+    int T;
+    int i;
+    char user_input;
+
+    scanf("%d" , &T);
+    for (i=0 ; i<T ; i++)
+    {
+        scanf(" %c" , &user_input);
+        switch(user_input)
+        {
+            case 'B' : printf("BattleShip \n");
+            break;
+            case 'b' : printf("BattleShip \n");
+            break;
+            case 'C' : printf("Cruiser \n");
+            break;
+            case 'c' : printf("Cruiser \n");
+            break;
+            case 'D' : printf("Destroyer \n");
+            break;
+            case 'd' : printf("Destroyer \n");
+            break;
+            case 'F' : printf("Frigate \n");
+            break;
+            case 'f' : printf("Frigate \n");
+            break;
+        }
+    }
+
+
+    return 0;
+}
