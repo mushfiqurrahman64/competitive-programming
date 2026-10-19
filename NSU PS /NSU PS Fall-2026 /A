@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main(void)
+{
+    int first_num , second_num , sum ;
+    scanf("%d" , &first_num);
+    scanf("%d" , &second_num);
+    sum = first_num + second_num;
+    printf("%d" , sum );
+    return 0;
+
+}
