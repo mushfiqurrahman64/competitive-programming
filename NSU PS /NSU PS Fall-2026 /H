@@ -1,0 +1,7 @@
+n= int(input())
+i=1
+j = n-1
+while i<=n:
+    print( j * " " + i * "#")
+    i = i+1
+    j = j-1
