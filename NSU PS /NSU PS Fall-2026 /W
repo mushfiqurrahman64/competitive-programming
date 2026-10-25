@@ -1,0 +1,31 @@
+#include<stdio.h>.
+
+
+int main(void)
+{
+    long long int n,i,j;
+    long long int sum =0;
+    long long int total_sum;
+    long long int missing_number;
+
+
+    scanf("%lld" , &n);
+    j = n-1;
+
+    long long int arr[j];
+
+    for (i=0 ; i<j ; i++)
+    {
+        scanf("%lld" , &arr[i]);
+        sum = sum + arr[i] ;
+
+    }
+    total_sum = (n*(n+1))/2 ;
+    missing_number = total_sum - sum ;
+    printf("%lld" , missing_number);
+
+
+
+
+    return 0;
+}
