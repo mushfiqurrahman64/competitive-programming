@@ -1,0 +1,69 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(void)
+{
+    int i=0 , j;
+    int T ;
+    int a , b ,c ,d ;
+
+    scanf("%d" , &T);
+    while(i<T)
+    {
+        j = i+1;
+        scanf("%d %d %d" , &a , &b , &c);
+        d = sqrt(pow(a,2) + pow(b,2)) ;
+        if (a>b && a>c)
+        {
+            j = i+1;
+
+            d = sqrt(pow(b,2) + pow(c,2)) ;
+            if (d == a)
+            {
+                printf("Case %d: yes \n" , j) ;
+            }
+            else
+            {
+                printf("Case %d: no \n" ,j ) ;
+            }
+
+
+        }
+        else if (b>a && b>c)
+        {
+            j = i+1;
+
+            d = sqrt(pow(a,2) + pow(c,2)) ;
+            if (d == b)
+            {
+                printf("Case %d: yes \n" , j) ;
+            }
+            else
+            {
+                printf("Case %d: no \n" ,j ) ;
+            }
+
+        }
+        else if (c>a && c>b)
+        {
+            j = i+1;
+
+            d = sqrt(pow(a,2) + pow(b,2)) ;
+            if (d == c)
+            {
+                printf("Case %d: yes \n" , j) ;
+            }
+            else
+            {
+                printf("Case %d: no \n" ,j ) ;
+            }
+
+        }
+        i = i +1;
+
+    }
+
+
+
+    return 0;
+}
