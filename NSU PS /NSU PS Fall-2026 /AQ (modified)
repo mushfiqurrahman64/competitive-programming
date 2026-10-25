@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<math.h>
+#define PI 3.1416
+
+
+int main(void)
+{
+    double area_of_small_circle , area_of_triangle , area_of_big_circle ;
+    int a , b , c ;
+    double s ;
+    double rs ; //radius of small circle
+    double rb ; //radius of big circle
+
+    scanf("%d %d %d" ,  &a , &b , &c);
+    s = (a+b+c)/2.0;
+    area_of_triangle = sqrt(s*(s-a)*(s-b)*(s-c)) ;
+    rs = area_of_triangle/s ;
+    area_of_small_circle = PI*pow(rs,2);
+
+    int big_int;
+    if (a>b && a>c)
+    {
+        big_int = a;
+    }
+    else if (b>c && b>a)
+    {
+        big_int = b;
+    }
+    else if (c>a && c>b)
+    {
+        big_int = c;
+    }
+
+    rb = big_int/2.0 ;
+    area_of_big_circle = PI* pow(rb,2);
+
+    double sunflower , voilate , rose ;
+    sunflower = area_of_big_circle - area_of_triangle ;
+    voilate = area_of_triangle - area_of_small_circle;
+    rose = area_of_small_circle;
+
+    printf("%.4f \n" , sunflower);
+    printf("%.4f \n" , voilate);
+    printf("%.4f \n" , rose);
+
+
+
+
+    return 0;
+}
