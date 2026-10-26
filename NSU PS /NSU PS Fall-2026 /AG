@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+    int other , floor_to_get , floor_to_go ;
+    int lift , my_floor ;
+    int n,i ;
+    int ans ;
+
+    scanf("%d" ,&n);
+
+    for (i=0 ; i<n ; i++)
+    {
+        other = 19;
+
+
+        scanf("%d %d" , &my_floor , &lift );
+        floor_to_get = abs(lift - my_floor);
+        floor_to_go = my_floor - 0 ;
+
+        ans = other + (4*floor_to_get) + (4*floor_to_go) ;
+
+        printf("Case %d: %d \n" , i+1 , ans);
+
+    }
+
+
+
+
+    return 0;
+}
