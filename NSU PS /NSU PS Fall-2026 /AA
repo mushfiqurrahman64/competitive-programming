@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(void)
+{
+    long long int T , i ,N , prodect ,j;
+    scanf("%lld" , &T);
+    for (i=0 ; i<T ; i++)
+    {
+        prodect = 1;
+        scanf("%lld" , &N);
+        for (j=N ; j>=1 ; j--)
+        {
+            prodect = prodect*j ;
+
+
+        }
+        printf("%lld \n" , prodect);
+    }
+
+
+    return 0;
+}
