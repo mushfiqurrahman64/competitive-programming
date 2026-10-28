@@ -1,0 +1,47 @@
+#include<stdio.h>
+
+int main(void)
+{
+    int w , half , mod ;
+
+    scanf("%d" , &w);
+    half = w/2 ;
+    mod = half%2 ;
+    if(w>=1 && w<=100 && w!=2)
+    {
+        if(w%2==0)
+    {
+        if (mod == 0)
+    {
+       printf("Yes");
+    }
+    else
+    {
+        int half_up , half_down ;
+        half_up = half + 1 ;
+        half_down =  half - 1 ;
+
+        if(half_up%2==0 && half_down%2==0)
+        {
+            printf("Yes");
+        }
+        else
+        {
+            printf("No");
+        }
+    }
+    }
+    else
+    {
+        printf("No");
+    }
+
+    }
+    else
+    {
+        printf("No");
+    }
+
+
+    return 0;
+}
