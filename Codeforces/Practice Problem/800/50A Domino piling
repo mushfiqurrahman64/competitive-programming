@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(void)
+{
+    int M,N ;
+    int result ;
+
+    scanf("%d %d", &M, &N);
+    result = (M*N)/2 ;
+
+    printf("%d" ,  result);
+
+
+    return 0;
+}
